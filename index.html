@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<title>H Individual — Send money and crypto worldwide</title>
+<meta name="description" content="H Individual is a personal account to send, hold and convert real money and crypto across borders at the real exchange rate. On web, iOS and Android. From Harbour &amp; Hills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="scrollline" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 667.16 492">
+    <path fill="var(--mark-ink,#f1f5f9)" d="M34.32,48.42v15.55h8.45c23.21,0,38.26,2.03,45.14,6.09,6.87,4.06,11.38,11.38,13.53,21.98,2.14,10.6,3.21,34.15,3.21,70.67v224.86c0,38.32-1.07,62.72-3.21,73.2-2.15,10.48-6.99,18.21-14.54,23.16-7.56,4.96-21.13,7.44-40.74,7.44h-11.83v15.55h206.26v-15.55h-11.83c-20.52,0-34.44-2.7-41.76-8.12-7.33-5.41-11.89-13.69-13.69-24.85-1.81-11.16-2.71-34.77-2.71-70.84v-224.86c0-38.09,1.18-62.21,3.55-72.36,2.37-10.14,7.04-17.07,14.03-20.8,6.98-3.72,21.64-5.58,43.96-5.58h8.45v-15.55H34.32Z"/>
+    <path fill="var(--mark-ink,#f1f5f9)" d="M315.93,48.42v15.55h12.17c23.21,0,38.26,2.03,45.14,6.09,6.87,4.06,11.33,11.38,13.36,21.98,2.03,10.6,3.04,34.15,3.04,70.67v224.86c0,38.32-1.01,62.72-3.04,73.2-2.03,10.48-6.82,18.21-14.37,23.16-7.56,4.96-21.02,7.44-40.41,7.44h-15.89v15.55h208.62v-15.55h-10.48c-20.51,0-34.49-2.7-41.93-8.12-7.44-5.41-12-13.69-13.69-24.85-1.69-11.16-2.54-34.77-2.54-70.84v-224.86c0-38.09,1.18-62.21,3.55-72.36,2.37-10.14,7.04-17.07,14.03-20.8,6.98-3.72,21.75-5.58,44.3-5.58h6.76v-15.55h-208.62Z"/>
+    <rect fill="var(--mark-bar,#00bfb3)" y="344.85" width="274.43" height="21.87"/>
+    <rect fill="var(--mark-bar,#00bfb3)" x="285.64" y="186.54" width="274.43" height="21.87"/>
+    <rect fill="var(--mark-bar,#00bfb3)" x="555.24" y="45.03" width="111.92" height="21.87"/>
+    <rect fill="var(--mark-bar,#00bfb3)" x="600.27" width="21.87" height="111.92"/>
+  </symbol>
+  <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><path fill="#00d7fe" d="M3.6 1.8 13.4 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#ffce00" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#ff3a44" d="M16.8 15.4 13.4 12 3.6 22.2c.4.2.9.2 1.4-.1z"/><path fill="#00f076" d="M16.8 8.6 5 1.9c-.5-.3-1-.3-1.4-.1L13.4 12z"/></symbol>
+</svg>
+
+<header class="hdr">
+  <div class="statusbar mono"><span><i class="dot"></i>Status: rates live</span><span data-clock-top>— HKT</span><span class="statusbar__r">Early access open · Hong Kong</span></div>
+  <div class="hdr__in">
+    <a class="logo" href="#top" aria-label="H Individual home"><svg viewBox="0 0 667.16 492" width="34" height="25" aria-hidden="true"><use href="#mark"/></svg><span>H Individual</span></a>
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="#app">The app</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#security">Security</a><a href="#faq">Help</a>
+    </nav>
+    <div class="hdr__end">
+      <a href="#" class="hdr__login" data-signup="login">Log in</a>
+      <a href="#" class="pill pill--teal" data-signup><span class="pill__label">Create account</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══ HERO (dark) ═══ -->
+<section class="hero" id="top">
+
+  <div class="hero__grid">
+    <div class="hero__media" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/street.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+      <div class="grain"></div>
+    </div>
+    <div class="hero__frame" aria-hidden="true">
+      <div class="hero__rail mono"><span class="barcode"></span><span class="vt">Status: rates live</span><span class="vt" data-clock-rail>— HKT</span></div>
+      <span class="hero__dots"></span>
+    </div>
+    <div class="hero__copy">
+      <p class="chip"><span class="dot"></span>For individuals · Early access in Hong Kong</p>
+      <h1 class="mega" data-lines aria-label="Money, without borders."><span aria-hidden="true">Money, without</span><span aria-hidden="true"><u><span data-scramble="borders.|fees.|markups.|delays.|limits." data-hlx="borders."><span>borders.</span></span></u></span></h1>
+      <p class="hero__lead">Send, hold and convert dollars, rupees, dirhams and crypto at the <b>real exchange rate</b> — on the web and in the H Individual app.</p>
+      <div class="hero__cta">
+        <a href="#" class="pill pill--lg pill--teal" data-signup><span class="pill__label">Create free account</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+        <div class="stores stores--sm">
+          <a href="#" class="store" data-store="ios" aria-label="Download H Individual on the App Store"><svg width="20" height="20"><use href="#apple"/></svg><span><small>Download on the</small>App Store</span></a>
+          <a href="#" class="store" data-store="android" aria-label="Get H Individual on Google Play"><svg width="18" height="18"><use href="#play"/></svg><span><small>Get it on</small>Google Play</span></a>
+        </div>
+      </div>
+      <ul class="hero__trust">
+        <li><b>0%</b> markup on the rate</li><li><b>1</b> fee, shown upfront</li><li><b>24/7</b> transfers</li>
+      </ul>
+    </div>
+
+    <!-- converter (ids/data attributes drive assets/main.js) -->
+    <form class="fx" id="fx" autocomplete="off" novalidate aria-labelledby="fx-title">
+      <div class="fx__head">
+        <h2 class="fx__title" id="fx-title">How much are you sending?</h2>
+        <span class="fx__live" data-live><i></i>Live</span>
+      </div>
+      <div class="fx__field" data-field="send">
+        <label class="fx__label" for="fx-amount">You send</label>
+        <div class="fx__row"><input id="fx-amount" inputmode="decimal" value="1,000" aria-describedby="fx-err"><select id="fx-from" aria-label="Currency you send"></select></div>
+      </div>
+      <div class="fx__mid">
+        <ul class="fx__lines">
+          <li><span>Our fee</span><b data-fee>—</b></li>
+          <li><span>We convert</span><b data-net>—</b></li>
+          <li><span>Mid-market<i class="sm-hide"> rate</i></span><b data-rate>—</b></li>
+        </ul>
+        <button type="button" class="fx__swap" id="fx-swap" aria-label="Swap currencies"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg></button>
+      </div>
+      <div class="fx__field" data-field="get">
+        <label class="fx__label" for="fx-out">Recipient gets</label>
+        <div class="fx__row"><input id="fx-out" inputmode="decimal" aria-label="Amount recipient gets"><select id="fx-to" aria-label="Currency recipient gets"></select></div>
+      </div>
+      <p class="fx__err" id="fx-err" role="alert" hidden></p>
+      <fieldset class="fx__method">
+        <legend class="fx__label">Delivered to</legend>
+        <div class="seg" role="radiogroup">
+          <label><input type="radio" name="method" value="bank" checked><span>Bank account</span></label>
+          <label><input type="radio" name="method" value="wallet"><span>Mobile wallet</span></label>
+          <label><input type="radio" name="method" value="crypto"><span>Crypto wallet</span></label>
+        </div>
+      </fieldset>
+      <dl class="fx__summary">
+        <div><dt>Arrives</dt><dd data-eta>Usually within minutes</dd></div>
+        <div><dt>Total cost</dt><dd data-total>—</dd></div>
+      </dl>
+      <p class="fx__compare" data-compare></p>
+      <button type="button" class="btn-send" data-signup data-fx-cta><span data-cta-label>Continue</span><i class="arrow" aria-hidden="true"></i></button>
+      <p class="fx__fine" data-updated>Fetching rates…</p>
+    </form>
+  </div>
+
+  <div class="markets" aria-label="Markets">
+    <article class="mkt">
+      <header class="mkt__h"><span class="mono">USD / HKD</span><em class="tag-ind">Indicative</em></header>
+      <p class="mkt__v mono" data-pair="USD:HKD">—</p>
+      <p class="mkt__sub mono">Linked Exchange Rate band</p>
+      <div class="band-bar" aria-hidden="true"><i data-band></i></div>
+      <p class="mkt__ends mono"><span>7.7500</span><span>7.8500</span></p>
+    </article>
+    <article class="mkt" data-spark="bitcoin">
+      <header class="mkt__h"><span class="mono">BTC / USD</span><em class="tag-ind">Live</em></header>
+      <p class="mkt__v mono" data-price="BTC">—</p>
+      <p class="mkt__sub mono"><span data-chg="BTC"></span> · 24h</p>
+      <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"><path class="spark__fill"/><path class="spark__line"/></svg>
+    </article>
+    <article class="mkt" data-spark="ethereum">
+      <header class="mkt__h"><span class="mono">ETH / USD</span><em class="tag-ind">Live</em></header>
+      <p class="mkt__v mono" data-price="ETH">—</p>
+      <p class="mkt__sub mono"><span data-chg="ETH"></span> · 24h</p>
+      <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"><path class="spark__fill"/><path class="spark__line"/></svg>
+    </article>
+    <div class="mkt mkt--list">
+      <header class="mkt__h"><span class="mono">Today's rates</span><em class="tag-ind">Tap to convert</em></header>
+      <div class="rates__grid" data-rates></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RAILS STRIP ═══ -->
+<section class="rails" aria-label="Payment rails">
+  <p class="rails__label mono">Designed to route over</p>
+  <span class="rail"><i>F</i>FPS</span><span class="rail"><i>U</i>UPI</span><span class="rail"><i>S</i>SWIFT</span><span class="rail"><i>€</i>SEPA</span>
+  <span class="rail"><i class="coin coin--eth">Ξ</i>Ethereum</span><span class="rail"><i class="coin coin--sol">◎</i>Solana</span><span class="rail"><i class="coin coin--usdt">T</i>Tron</span>
+</section>
+
+
+<!-- ═══ PEOPLE (portrait strip) ═══ -->
+<section class="people" aria-labelledby="people-title">
+  <p class="people__bg" aria-hidden="true">everyone</p>
+  <div class="people__head">
+    <p class="brk">Who it's for</p>
+    <h2 class="h1" id="people-title" data-lines><span>Built for lives</span><span>that <u>cross borders.</u></span></h2>
+  </div>
+  <div class="strip">
+    <figure class="shot" data-reveal><img src="assets/img/wages.jpg" alt="Man checking his phone against a brick wall" loading="lazy" width="720" height="960"><figcaption><span class="mono">AED → INR</span>Sending wages home</figcaption></figure>
+    <figure class="shot" data-reveal><img src="assets/img/family.jpg" alt="Woman smiling at her phone" loading="lazy" width="720" height="960"><figcaption><span class="mono">HKD → PHP</span>Supporting family</figcaption></figure>
+    <figure class="shot shot--tall" data-reveal><img src="assets/img/student.jpg" alt="Young woman smiling" loading="lazy" width="720" height="960"><figcaption><span class="mono">SGD → IDR</span>Studying abroad</figcaption></figure>
+    <figure class="shot" data-reveal><img src="assets/img/freelance.jpg" alt="Craftsman working at a bench" loading="lazy" width="720" height="960"><figcaption><span class="mono">USDC → INR</span>Getting paid from abroad</figcaption></figure>
+    <figure class="shot" data-reveal><img src="assets/img/travel.jpg" alt="Travellers looking out of an airport window" loading="lazy" width="720" height="960"><figcaption><span class="mono">HKD → EUR</span>Travelling</figcaption></figure>
+  </div>
+</section>
+
+<!-- ═══ APP SHOWCASE ═══ -->
+<section class="app" id="app">
+  <div class="app__head">
+    <p class="kicker mono">Web · iOS · Android</p>
+    <h2 class="h1" data-lines><span>Every currency you hold,</span><span><u>one screen.</u></span></h2>
+    <p class="lead" data-reveal>See all your balances, move between them at the real rate and send anywhere — from your laptop or your phone. Everything stays in sync.</p>
+  </div>
+
+  <div class="devices" data-reveal>
+    <!-- web dashboard -->
+    <div class="browser" role="img" aria-label="H Individual web dashboard showing total balance, currency accounts, crypto holdings and recent transfers">
+      <div class="browser__bar"><i></i><i></i><i></i><span>app.hindividual.com</span></div>
+      <div class="dash">
+        <aside class="dash__side">
+          <svg viewBox="0 0 667.16 492" width="26" height="19" aria-hidden="true"><use href="#mark"/></svg>
+          <nav><b class="on">Home</b><b>Accounts</b><b>Send</b><b>Crypto</b><b>Card</b><b>Recipients</b></nav>
+        </aside>
+        <div class="dash__main">
+          <div class="dash__top">
+            <div><p class="dash__label">Total balance</p><p class="dash__total">$48,920<small>.15</small></p><p class="dash__up">▲ 2.4% this month</p></div>
+            <div class="dash__actions"><span class="act act--primary">Send</span><span class="act">Add money</span><span class="act">Convert</span></div>
+          </div>
+          <div class="dash__cols">
+            <div class="panel">
+              <p class="panel__h">Accounts</p>
+              <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/us.svg" alt="" loading="lazy"></i><span>US Dollar</span><b>22,410.00</b></div>
+              <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/hk.svg" alt="" loading="lazy"></i><span>Hong Kong Dollar</span><b>154,380.50</b></div>
+              <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/in.svg" alt="" loading="lazy"></i><span>Indian Rupee</span><b>4,86,220.00</b></div>
+              <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/ae.svg" alt="" loading="lazy"></i><span>UAE Dirham</span><b>3,120.00</b></div>
+            </div>
+            <div class="panel">
+              <p class="panel__h">Crypto <em class="livetag">Live</em></p>
+              <div class="acc"><i class="coin coin--btc">₿</i><span>Bitcoin</span><b data-price="BTC">—</b><em data-chg="BTC"></em></div>
+              <div class="acc"><i class="coin coin--eth">Ξ</i><span>Ether</span><b data-price="ETH">—</b><em data-chg="ETH"></em></div>
+              <div class="acc"><i class="coin coin--usdc">$</i><span>USD Coin</span><b data-price="USDC">—</b><em data-chg="USDC"></em></div>
+              <div class="acc"><i class="coin coin--usdt">₮</i><span>Tether</span><b data-price="USDT">—</b><em data-chg="USDT"></em></div>
+            </div>
+            <div class="panel panel--wide">
+              <p class="panel__h">Recent</p>
+              <div class="tx"><i class="tx__ic">↗</i><span>To Priya S. · Mumbai<small>Bank · 2 min</small></span><b>−$500.00</b><em class="ok">Delivered</em></div>
+              <div class="tx"><i class="tx__ic tx__ic--in">↙</i><span>Salary · Hong Kong<small>FPS</small></span><b class="in">+HK$42,000</b><em class="ok">Received</em></div>
+              <div class="tx"><i class="tx__ic">⇄</i><span>Converted to USDC<small>Mid-market</small></span><b>1,000 USDC</b><em class="ok">Done</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- phone -->
+    <div class="phone" role="img" aria-label="H Individual mobile app home screen">
+      <div class="phone__notch"></div>
+      <div class="phone__screen">
+        <div class="ph__top"><span class="ph__hi">Hi, Arun</span><span class="ph__bell">●</span></div>
+        <p class="ph__label">Total balance</p>
+        <p class="ph__total">$48,920<small>.15</small></p>
+        <div class="ph__acts"><span><i>↗</i>Send</span><span><i>+</i>Add</span><span><i>⇄</i>Convert</span><span><i>▭</i>Card</span></div>
+        <div class="ph__card">
+          <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/us.svg" alt="" loading="lazy"></i><span>USD</span><b>22,410.00</b></div>
+          <div class="acc"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/in.svg" alt="" loading="lazy"></i><span>INR</span><b>4,86,220</b></div>
+          <div class="acc"><i class="coin coin--btc">₿</i><span>BTC</span><b>0.2841</b></div>
+          <div class="acc"><i class="coin coin--usdc">$</i><span>USDC</span><b>7,500.00</b></div>
+        </div>
+        <div class="ph__toast"><i>✓</i><span>₹41,610 delivered to Priya<small>2 minutes · bank account</small></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app__get" data-reveal>
+    <p><b>Get the app.</b> Available at launch on iPhone and Android.</p>
+    <div class="stores">
+      <a href="#" class="store" data-store="ios" aria-label="Download H Individual on the App Store"><svg width="22" height="22"><use href="#apple"/></svg><span><small>Download on the</small>App Store</span></a>
+      <a href="#" class="store" data-store="android" aria-label="Get H Individual on Google Play"><svg width="20" height="20"><use href="#play"/></svg><span><small>Get it on</small>Google Play</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURE WIDGETS (bento) ═══ -->
+<section class="widgets" id="features">
+  <h2 class="h1" data-lines><span>Built for the way</span><span>you <u>actually</u> move money.</span></h2>
+  <div class="feats">
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>Hold 40+ currencies</h3><p>Open a balance in any currency and convert at the mid-market rate in seconds.</p></div>
+      <div class="w__ui chips">
+        <span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/us.svg" alt="" loading="lazy"></i>USD</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/hk.svg" alt="" loading="lazy"></i>HKD</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/in.svg" alt="" loading="lazy"></i>INR</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/ae.svg" alt="" loading="lazy"></i>AED</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/ph.svg" alt="" loading="lazy"></i>PHP</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/sg.svg" alt="" loading="lazy"></i>SGD</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/gb.svg" alt="" loading="lazy"></i>GBP</span><span><i><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/eu.svg" alt="" loading="lazy"></i>EUR</span><span class="more">+32</span>
+      </div>
+    </article>
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>Crypto, live</h3><p>Buy, hold and send the big four from one balance.</p></div>
+      <div class="w__ui coins">
+        <div><i class="coin coin--btc">₿</i><span>BTC</span><b data-price="BTC">—</b><em data-chg="BTC"></em></div>
+        <div><i class="coin coin--eth">Ξ</i><span>ETH</span><b data-price="ETH">—</b><em data-chg="ETH"></em></div>
+      </div>
+    </article>
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>Track every step</h3><p>Know exactly where your money is.</p></div>
+      <ol class="w__ui track" data-track>
+        <li class="done"><b>Sent</b><span>You paid $500.00</span></li>
+        <li class="done"><b>Converted</b><span>At 96.06 · mid-market</span></li>
+        <li class="now"><b>On its way</b><span>To HDFC Bank ••4821</span></li>
+        <li><b>Delivered</b><span>Usually within minutes</span></li>
+      </ol>
+    </article>
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>Rate alerts</h3><p>We'll tell you when your rate hits.</p></div>
+      <div class="w__ui alert">
+        <span class="alert__pair">USD → INR</span>
+        <span class="alert__target">Notify me at <b>96.50</b></span>
+        <label class="toggle"><input type="checkbox" checked aria-label="Rate alert on"><i></i></label>
+      </div>
+    </article>
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>One card, any currency</h3><p>Pays from the balance that costs you least.</p></div>
+      <div class="w__ui card-mock" aria-hidden="true">
+        <svg viewBox="0 0 667.16 492" width="34" height="25"><use href="#mark"/></svg>
+        <span class="card-mock__chip"></span><span class="card-mock__num">•••• 4821</span><span class="card-mock__name">H Individual</span>
+      </div>
+    </article>
+    <article class="w" data-reveal>
+      <div class="w__txt"><h3>You approve every new recipient</h3><p>Two-factor confirmation on your phone before money goes anywhere new.</p></div>
+      <div class="w__ui approve">
+        <p class="approve__h">New recipient</p>
+        <p class="approve__who"><i class="flag"><img src="https://cdn.jsdelivr.net/npm/circle-flags@2.8.3/flags/ph.svg" alt="" loading="lazy"></i><span>Maria Santos<small>BDO Unibank ••1190 · Manila</small></span></p>
+        <div class="approve__btns"><span class="no">Decline</span><span class="yes">Approve with Face ID</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ═══ NETWORK STATUS (photo band + instrument panel) ═══ -->
+<section class="band" aria-labelledby="net-title">
+  <img class="band__img" src="assets/img/street.jpg" alt="" loading="lazy" width="960" height="1080">
+  <div class="band__copy">
+    <p class="brk brk--light">Network</p>
+    <h2 class="band__word" id="net-title" data-lines><span>Corridor</span><span>by <u>corridor.</u></span></h2>
+    <p class="band__lead">We open routes one at a time, starting where fees hurt most — each with licensed partners on both ends.</p>
+  </div>
+  <div class="status" role="table" aria-label="Corridor status">
+    <div class="status__head mono" role="row"><span role="columnheader">Network status</span><span class="status__clock" data-clock>--:--:-- HKT</span></div>
+    <div class="status__row status__row--h mono" role="row"><span role="columnheader">#</span><span role="columnheader">Corridor</span><span role="columnheader">Mid rate</span><span role="columnheader">Status</span></div>
+    <div class="status__row mono" role="row"><span role="cell">01.</span><span role="cell">AED → INR</span><b role="cell" data-pair="AED:INR">—</b><em role="cell" class="st st--beta">BETA</em></div>
+    <div class="status__row mono" role="row"><span role="cell">02.</span><span role="cell">HKD → PHP</span><b role="cell" data-pair="HKD:PHP">—</b><em role="cell" class="st st--build">IN BUILD</em></div>
+    <div class="status__row mono" role="row"><span role="cell">03.</span><span role="cell">HKD → INR</span><b role="cell" data-pair="HKD:INR">—</b><em role="cell" class="st st--build">IN BUILD</em></div>
+    <div class="status__row mono" role="row"><span role="cell">04.</span><span role="cell">USDC → PHP</span><b role="cell" data-pair="USDC:PHP">—</b><em role="cell" class="st st--build">IN BUILD</em></div>
+    <div class="status__row mono" role="row"><span role="cell">05.</span><span role="cell">GBP → NGN</span><b role="cell" data-pair="GBP:NGN">—</b><em role="cell" class="st">PLANNED</em></div>
+    <div class="status__row mono" role="row"><span role="cell">06.</span><span role="cell">SGD → IDR</span><b role="cell" data-pair="SGD:IDR">—</b><em role="cell" class="st">PLANNED</em></div>
+    <p class="status__foot mono">Rates: indicative mid-market · refresh 60s</p>
+  </div>
+</section>
+
+<!-- ═══ STATS (dark) ═══ -->
+<section class="stats">
+  <div class="stats__intro" data-reveal>
+    <p class="kicker mono">Why we exist</p>
+    <h2 class="h2">Sending money home still costs too much.</h2>
+    <p>People lose a slice of every transfer to fees and a rate that's quietly marked up. The world has agreed that's too much.</p>
+  </div>
+  <ol class="stats__list">
+    <li data-reveal><span class="stat" data-count="6">6<sup>%+</sup></span><div><p>Global average cost of sending $200 abroad — much of it hidden in the exchange rate.</p><cite>World Bank, Remittance Prices Worldwide</cite></div></li>
+    <li data-reveal><span class="stat" data-count="3">3<sup>%</sup></span><div><p>The UN's target for the cost of sending money home, set in the Sustainable Development Goals.</p><cite>UN SDG target 10.c</cite></div></li>
+    <li data-reveal><span class="stat stat--teal" data-count="0">0<sup>%</sup></span><div><p>What H Individual adds to the exchange rate. One clear fee, shown before you confirm.</p><cite>H Individual launch pricing</cite></div></li>
+  </ol>
+</section>
+
+<!-- ═══ HOW IT WORKS (light relief) ═══ -->
+<section class="how" id="how">
+  <div class="how__head">
+    <h2 class="h1" data-lines><span>Your first transfer,</span><span><u>in minutes.</u></span></h2>
+    <div data-reveal>
+      <p>Verify once, then send to a bank, a mobile wallet or a crypto address — and track it until it lands.</p>
+      <a href="#" class="pill" data-signup><span class="pill__label">Get started</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+    </div>
+  </div>
+  <ol class="stack">
+    <li data-reveal><span class="stack__n">1</span><div><h3>Create your account</h3><p>Sign up with your email and verify your ID once — passport or HKID. About five minutes.</p></div></li>
+    <li data-reveal><span class="stack__n">2</span><div><h3>Add money</h3><p>Top up by bank transfer or card, or deposit crypto to your personal wallet address.</p></div></li>
+    <li data-reveal><span class="stack__n">3</span><div><h3>Choose where it goes</h3><p>A bank account, a mobile wallet or a crypto address. We pick the cheapest route.</p></div></li>
+    <li data-reveal><span class="stack__n">4</span><div><h3>Track it live</h3><p>Follow every step until it lands. Most transfers arrive within minutes.</p></div></li>
+  </ol>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="pricing" id="pricing">
+  <div>
+    <p class="kicker mono">Pricing</p>
+    <h2 class="h1" data-lines><span>One fee.</span><span><u>Shown upfront.</u></span></h2>
+    <p class="lead" data-reveal>No markup on the exchange rate, no monthly subscription. What you see in the converter is what you pay.</p>
+    <a href="#fx" class="pill pill--line"><span class="pill__label">Try the converter</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+  </div>
+  <div data-reveal>
+    <table class="table">
+      <caption>Launch pricing</caption>
+      <tbody>
+        <tr><th scope="row">H Individual account &amp; wallet</th><td>Free</td></tr>
+        <tr><th scope="row">International transfer</th><td>0.5%</td></tr>
+        <tr><th scope="row">Currency conversion</th><td>Mid-market + 0.5%</td></tr>
+        <tr><th scope="row">Crypto buy, sell or send</th><td>1%</td></tr>
+        <tr><th scope="row">Between H Individual accounts</th><td>Free</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Illustrative launch pricing. Your exact fee is always shown in the app before you confirm.</p>
+  </div>
+</section>
+
+<!-- ═══ SECURITY (dark) ═══ -->
+<section class="security" id="security">
+  <div>
+    <p class="kicker mono">Security</p>
+    <h2 class="h1" data-lines><span>Your money,</span><span><u>protected.</u></span></h2>
+    <p class="lead" data-reveal>Built by <a href="https://www.harbourandhills.com/hk/index.html" target="_blank" rel="noopener">Harbour &amp; Hills</a>, a Hong Kong cross-border payments company. We launch each corridor only with licensed payment and digital-asset partners in that market.</p>
+  </div>
+  <ul class="checks">
+    <li data-reveal><b>Identity verified</b><span>Every account passes KYC checks before it can send.</span></li>
+    <li data-reveal><b>Encrypted</b><span>Your data and payments are encrypted in transit and at rest.</span></li>
+    <li data-reveal><b>Two-factor login</b><span>Every sign-in and new recipient is confirmed on your phone.</span></li>
+    <li data-reveal><b>Monitored 24/7</b><span>Transfers are screened for fraud in real time.</span></li>
+  </ul>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="faq" id="faq">
+  <div>
+    <p class="kicker mono">Help</p>
+    <h2 class="h1" data-lines><span>Questions?</span></h2>
+    <p class="lead" data-reveal>Can't find an answer? <a href="mailto:support@example.com">Email our team</a>.</p>
+  </div>
+  <div class="faq__list">
+    <details name="faq"><summary>Which countries can I send to?</summary><p>We are opening corridor by corridor, starting from Hong Kong and the UAE to India and the Philippines. Create an account and we'll tell you as soon as your route is live.</p></details>
+    <details name="faq"><summary>Is H Individual on web and mobile?</summary><p>Yes. You can use H Individual in your browser and in our iPhone and Android apps. Your account and balances are the same everywhere.</p></details>
+    <details name="faq"><summary>How do you make money if you use the real rate?</summary><p>We charge one clear fee, shown before you confirm. We never add a margin to the exchange rate.</p></details>
+    <details name="faq" id="business"><summary>Is there an account for businesses?</summary><p>H Individual is for people sending and holding their own money. For companies, Harbour &amp; Hills offers <a href="https://www.harbourandhills.com/hk/index.html" target="_blank" rel="noopener">H Business</a>.</p></details>
+    <details name="faq"><summary>What do I need to open an account?</summary><p>You need to be 18 or over, with an email address, a phone number and a valid government ID such as a passport or HKID. Accounts are in your own name.</p></details>
+    <details name="faq"><summary>Can I send crypto to someone who only has a bank account?</summary><p>Yes. Send in stablecoins and your recipient can receive local currency in their bank or mobile wallet.</p></details>
+    <details name="faq"><summary>Is crypto available everywhere?</summary><p>No. Digital-asset services depend on local regulation and aren't offered in every country.</p></details>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final">
+  <h2 class="mega mega--center" data-lines><span>Your next transfer</span><span>could cost <u>less.</u></span></h2>
+  <p>Open a free H Individual account in about five minutes.</p>
+  <div class="final__cta">
+    <a href="#" class="pill pill--lg pill--teal" data-signup><span class="pill__label">Create free account</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+    <div class="stores">
+      <a href="#" class="store" data-store="ios" aria-label="Download H Individual on the App Store"><svg width="22" height="22"><use href="#apple"/></svg><span><small>Download on the</small>App Store</span></a>
+      <a href="#" class="store" data-store="android" aria-label="Get H Individual on Google Play"><svg width="20" height="20"><use href="#play"/></svg><span><small>Get it on</small>Google Play</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot__grid">
+    <a href="#top" class="foot__logo"><img src="assets/logo-light.svg" width="150" height="150" alt="H Individual — One World. One Money."></a>
+    <div><h3>Product</h3><a href="#app">The app</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></div>
+    <div><h3>Company</h3><a href="https://www.harbourandhills.com/hk/index.html" target="_blank" rel="noopener">Harbour &amp; Hills</a><a href="#business">H Business</a><a href="#faq">Help</a></div>
+    <div><h3>Legal</h3><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+  </div>
+  <p class="foot__legal">H Individual is a personal-account service from Harbour &amp; Hills. Services are in development and subject to regulatory approval in each market. App and dashboard screens shown are illustrative. Exchange rates shown are indicative mid-market rates from third-party data providers and may differ from the rate at the time of transfer. Digital assets are volatile and are not deposits. Apple and the Apple logo are trademarks of Apple Inc. Google Play is a trademark of Google LLC. © <span data-year></span> Harbour &amp; Hills.</p>
+</footer>
+
+<div class="mbar" data-mbar aria-hidden="true"><a href="#" class="pill pill--teal pill--block" data-signup tabindex="-1"><span class="pill__label">Create free account</span><span class="pill__dot"><i class="arrow"></i></span></a></div>
+
+<!-- store links: not live yet -->
+<div class="toast" data-toast role="status" hidden>The H Individual app launches soon. Create an account and we'll send you the download link.</div>
+
+<!-- ═══ SIGN-UP (two steps) ═══ -->
+<dialog class="modal" id="signup" aria-labelledby="signup-title">
+  <form method="dialog" class="modal__x"><button aria-label="Close">×</button></form>
+  <form class="modal__form" id="signup-form" novalidate>
+    <p class="modal__step" data-step-label>Step 1 of 2</p>
+    <h2 id="signup-title">Create your personal account</h2>
+    <p class="muted" data-signup-sub>For individuals. Free to open, no card needed.</p>
+    <div class="modal__summary" data-signup-summary hidden></div>
+    <div data-step="1">
+      <label class="fld"><span>Email</span><input name="email" type="email" required autocomplete="email" placeholder="you@example.com"><em class="fld__err">Enter a valid email address.</em></label>
+      <button class="btn-send" type="button" data-next><span>Continue</span><i class="arrow" aria-hidden="true"></i></button>
+    </div>
+    <div data-step="2" hidden>
+      <label class="fld"><span>Full name <small>as on your ID</small></span><input name="name" required autocomplete="name"><em class="fld__err">Enter your full name.</em></label>
+      <label class="fld"><span>Country you live in</span><select name="country" required>
+        <option value="">Select…</option><option>Hong Kong</option><option>United Arab Emirates</option><option>Singapore</option><option>United Kingdom</option><option>India</option><option>Philippines</option><option>Other</option>
+      </select><em class="fld__err">Choose your country.</em></label>
+      <label class="check"><input type="checkbox" name="terms" required> <span>I'm 18 or over and agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></span></label>
+      <em class="fld__err fld__err--terms">Please accept to continue.</em>
+      <div class="modal__actions">
+        <button class="linkbtn" type="button" data-back>Back</button>
+        <button class="btn-send btn-send--auto" type="submit"><span>Create account</span><i class="arrow" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div data-step="done" hidden class="modal__done">
+      <p><b>Check your inbox.</b> We've sent a link to <span data-email></span> to verify your account.</p>
+      <button class="btn-send" type="button" data-close><span>Done</span></button>
+    </div>
+    <p class="modal__trust">🔒 Encrypted. We never share your details.</p>
+  </form>
+</dialog>
+
+<script src="assets/main.js"></script>
+<script src="assets/ui.js"></script>
+</body>
+</html>
