@@ -444,7 +444,7 @@ u{text-decoration:none;background:linear-gradient(var(--teal),var(--teal)) 0 94%
 .foot h3{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}
 .foot__grid a:not(.foot__logo){display:block;padding:3px 0;text-decoration:none;color:#c7c7c7}
 .foot__grid a:not(.foot__logo):hover{color:var(--teal)}
-.foot__legal{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;line-height:1.7;color:#6e6e6e;max-width:90em}
+.foot__legal{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;line-height:1.7;color:#6e6e6e}
 @media(max-width:700px){.foot__grid{grid-template-columns:1fr 1fr}.foot__logo{grid-column:1/-1}}
 
 /* ── mobile sticky CTA ── */
