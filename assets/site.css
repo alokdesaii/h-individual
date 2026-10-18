@@ -601,11 +601,11 @@ h3{font-weight:500}
 @media(prefers-reduced-motion:reduce){.grain{animation:none}.hero__media video{display:none}}
 
 /* full-bleed hero: video runs edge to edge and under the header, frame sits inside */
-main>section.hero{width:100%;margin-top:calc(-1 * var(--hh,90px))}
-.hero__grid{border-radius:0;min-height:100svh;padding:calc(var(--hh,90px) + 16px) 28px 28px}
-.hero__frame{inset:calc(var(--hh,90px) + 16px) 28px 28px}
+main>section.hero{width:100%;margin-top:calc(-1 * var(--hh))}
+.hero__grid{border-radius:0;min-height:100svh;padding:calc(var(--hh) + 16px) 28px 28px}
+.hero__frame{inset:calc(var(--hh) + 16px) 28px 28px}
 .hdr:not(.scrolled),.hdr:not(.scrolled) .statusbar{background:transparent;backdrop-filter:none;border-color:transparent}
-@media(max-width:600px){.hero__grid{padding:calc(var(--hh,90px) + 8px) 12px 12px}.hero__frame{inset:calc(var(--hh,90px) + 8px) 12px 12px}}
+@media(max-width:600px){.hero__grid{padding:calc(var(--hh) + 8px) 12px 12px}.hero__frame{inset:calc(var(--hh) + 8px) 12px 12px}}
 @media(max-width:1060px){.hero__grid{grid-template-columns:minmax(0,1fr)}}
 
 /* one gutter for the whole page: every section, header and footer line up with the hero frame */
@@ -707,3 +707,8 @@ main>section:not(.hero),.foot{width:var(--W)}
   .feats .w__txt::before{margin-bottom:16px}
 }
 .logo img{display:block;height:48px;width:auto}
+/* taller header so the stacked logo's INDIVIDUAL wordmark stays legible */
+.hdr__in{height:92px}
+.logo img{height:72px}
+@media(max-width:600px){.hdr__in{height:76px}.logo img{height:58px}}
+:root{--hh:124px}@media(max-width:600px){:root{--hh:108px}}  /* header height before ui.js measures it */
