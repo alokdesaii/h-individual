@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo-light.svg" alt="H Individual" width="140">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-light.svg"><img src="assets/logo.svg" alt="H Individual" width="140"></picture>
 
 # H Individual
 
