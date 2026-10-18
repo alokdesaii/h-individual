@@ -706,3 +706,4 @@ main>section:not(.hero),.foot{width:var(--W)}
   .feats .w::after{min-height:240px}
   .feats .w__txt::before{margin-bottom:16px}
 }
+.logo img{display:block;height:48px;width:auto}
