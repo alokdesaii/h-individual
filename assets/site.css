@@ -718,3 +718,4 @@ main>section:not(.hero),.foot{width:var(--W)}
 .stack__n{font-family:var(--sans);font-size:clamp(48px,4.4vw,72px);font-weight:300;letter-spacing:-.04em;line-height:.9}
 @media(max-width:1000px){.stack li{min-height:0}}
 @media(max-width:600px){.how li h3{margin-top:0}}
+.stack__n{color:var(--teal)}
