@@ -720,3 +720,7 @@ main>section:not(.hero),.foot{width:var(--W)}
 @media(max-width:600px){.how li h3{margin-top:0}}
 .stack__n{color:var(--teal)}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+/* pricing table: round the corner cells instead of clipping, so the caption isn't cut */
+.table{overflow:visible}
+.table tr:first-child th{border-top-left-radius:20px}.table tr:first-child td{border-top-right-radius:20px}
+.table tr:last-child th{border-bottom-left-radius:20px}.table tr:last-child td{border-bottom-right-radius:20px}
