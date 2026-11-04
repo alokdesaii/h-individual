@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="noindex">
+<title>Page not found — H Individual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Absolute paths: this page is served for any missing URL, at any depth. -->
+<link rel="icon" type="image/svg+xml" href="/assets/mark.svg?v=3">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .nf{width:var(--W);margin:12px auto;min-height:calc(100svh - 100px);display:grid;place-items:center;padding:clamp(48px,8vw,120px) 24px;border-radius:32px;background:var(--ink-2);text-align:center;position:relative;overflow:hidden}
+  .nf::before{content:"";position:absolute;inset:0;background:repeating-radial-gradient(circle at 50% 120%,transparent 0 9px,rgba(255,255,255,.06) 9px 10px);pointer-events:none}
+  .nf>div{position:relative;max-width:640px}
+  .nf__code{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+  .nf__code b{color:var(--teal);font-weight:500}
+  .nf h1{margin-top:22px;font-size:clamp(48px,8vw,112px);font-weight:400;letter-spacing:-.05em;line-height:1.08;color:#fff}
+  .nf h1 u{background:var(--teal);color:#050505;text-decoration:none;padding:0 .08em}
+  .nf p{margin:22px auto 0;max-width:30em;font-size:clamp(16px,1.4vw,18px);line-height:1.55;color:#a8a8a8}
+  .nf__cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:36px}
+  .nf__links{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:center;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-size:14px}
+  .nf__links a{color:#c7c7c7;text-decoration:none}
+  .nf__links a:hover{color:var(--teal)}
+  .page-404 .hdr{position:sticky}
+  .page-404 .hdr__in{height:76px}
+  .page-404 .logo img{height:56px}
+</style>
+</head>
+<body class="page-404">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr scrolled">
+  <div class="hdr__in">
+    <a class="logo" href="/"><img src="/assets/logo-light.svg?v=2" width="48" height="48" alt="H Individual home"></a>
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="/#app">The app</a><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/#security">Security</a><a href="/#faq">Help</a>
+    </nav>
+    <div class="hdr__end">
+      <a href="#" class="hdr__login">Log in</a><!-- BACKEND: link to /login once the portal exists -->
+      <a href="/" class="pill pill--teal"><span class="pill__label">Create account</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="nf">
+  <div>
+    <p class="nf__code"><b>Error 404</b> · Route not found</p>
+    <h1>This page got lost <u>in transit.</u></h1>
+    <p>The link may be broken, or the page may have moved. Your money is fine — it's just this page we can't find.</p>
+    <div class="nf__cta">
+      <a href="/" class="pill pill--teal pill--lg"><span class="pill__label">Back to home</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+      <a href="/#faq" class="pill pill--line pill--lg"><span class="pill__label">Get help</span><span class="pill__dot" aria-hidden="true"><i class="arrow"></i></span></a>
+    </div>
+    <nav class="nf__links" aria-label="Popular pages">
+      <a href="/#fx">Check a rate</a><a href="/#pricing">Pricing</a><a href="/#network">Where we send</a><a href="/#security">Security</a><a href="/complaints.html">Complaints</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>
