@@ -33,6 +33,7 @@ img,svg{display:block}
 .nav a[aria-current="page"]{color:#fff;font-weight:500}
 .nav a[aria-current="page"]::after{content:"";width:6px;height:6px;margin-left:auto;background:var(--teal)}
 .nav a[aria-current="page"]:has(.count)::after{margin-left:10px}
+.nav a[aria-current="page"] svg{stroke:var(--teal)}
 .nav a[aria-current="page"]:hover{background:none}
 .nav svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .nav .count{margin-left:auto;font-family:var(--mono);font-size:11px;padding:1px 7px;border-radius:99px;background:var(--teal);color:var(--ink)}
