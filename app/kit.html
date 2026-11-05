@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>UI kit — H Individual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../assets/mark.svg?v=3">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ═══ SHELL: copy everything from here to </aside> + the .top header + .tabbar into every logged-in screen ═══ -->
+<div class="app">
+  <aside class="side" aria-label="Main">
+    <a class="side__logo" href="dashboard.html"><img src="../assets/logo-light.svg?v=2" alt="H Individual home" width="44" height="44"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="dashboard.html"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+      <a href="send.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Send</a>
+      <a href="balances.html"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg>Balances</a>
+      <a href="recipients.html"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg>Recipients</a>
+      <a href="activity.html"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Activity<span class="count" data-api="GET /me/pending-count">2</span></a>
+    </nav>
+    <p class="side__label">Account</p>
+    <nav class="nav" aria-label="Account">
+      <a href="settings.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 14H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 3V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 21 10h0a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Settings</a>
+      <a href="help.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.7M12 17h.01"/></svg>Help</a>
+      <a href="kit.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>UI kit</a>
+    </nav>
+    <div class="side__foot nav">
+      <a href="login.html" data-api="POST /auth/logout"><svg viewBox="0 0 24 24"><path d="M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 17l5-5-5-5M15 12H3"/></svg>Log out</a>
+    </div>
+  </aside>
+
+  <div>
+    <header class="top">
+      <button class="btn btn--ghost btn--icon top__menu" data-nav-toggle aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <span class="top__title">UI kit</span>
+      <div class="top__end">
+        <a class="btn btn--primary btn--sm" href="send.html">Send money</a>
+        <button class="btn btn--ghost btn--icon" aria-label="Notifications" data-toast="No new notifications"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10 21h4"/></svg></button>
+        <span class="avatar" aria-label="Signed in as Priya Shah" data-api="GET /me → initials">PS</span>
+      </div>
+    </header>
+<!-- ═══ /SHELL (top) ═══ -->
+
+    <main id="main" class="main">
+      <div class="page-head">
+        <div><h1>UI kit</h1><p>Every component the portal screens use. Classes live in <code>app/app.css</code>, behaviour in <code>app/app.js</code>.</p></div>
+        <a class="btn btn--line" href="index.html">Screen index</a>
+      </div>
+
+      <section class="grid grid--3" aria-label="Stats">
+        <div class="card"><p class="kicker">Total balance</p><p class="stat">HK$ 48,210.55</p><p class="muted">Across 4 currencies</p></div>
+        <div class="card"><p class="kicker">Sent this month</p><p class="stat">HK$ 12,900.00</p><p class="muted">6 transfers</p></div>
+        <div class="card card--dark"><p class="kicker" style="color:#8a8a8a">Monthly limit left</p><p class="stat" style="color:var(--teal)">HK$ 87,100</p><p style="color:#8a8a8a">of HK$ 100,000</p></div>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2 class="card__title">Buttons</h2></div>
+        <div class="row">
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--dark">Dark</button>
+          <button class="btn btn--line">Outline</button>
+          <button class="btn btn--ghost">Ghost</button>
+          <button class="btn btn--danger">Delete</button>
+          <button class="btn btn--primary" aria-busy="true">Loading</button>
+          <button class="btn btn--primary" disabled>Disabled</button>
+          <button class="btn btn--line btn--sm">Small</button>
+          <button class="btn btn--primary btn--lg">Large</button>
+        </div>
+      </section>
+
+      <section class="grid grid--2">
+        <form class="card stack" onsubmit="event.preventDefault();toast('Form submitted')">
+          <h2 class="card__title">Form fields</h2>
+          <div class="field"><label for="k-name">Full name</label><input class="input" id="k-name" autocomplete="name" placeholder="As on your HKID or passport"></div>
+          <div class="field"><label for="k-email">Email</label><input class="input" id="k-email" type="email" aria-invalid="true" aria-describedby="k-email-err" value="priya@"><p class="error" id="k-email-err">Enter a valid email address.</p></div>
+          <div class="field"><label for="k-cur">Currency</label><select class="select" id="k-cur"><option>HKD — Hong Kong dollar</option><option>USD — US dollar</option><option>INR — Indian rupee</option><option>AED — UAE dirham</option></select></div>
+          <div class="field"><label for="k-note">Reference</label><textarea class="textarea" id="k-note" placeholder="Shown to the recipient"></textarea><p class="hint">Up to 35 characters.</p></div>
+          <label class="check"><input type="checkbox"> I confirm this recipient's details are correct</label>
+          <div class="field"><span class="label" id="k-otp">One-time code</span><div class="otp" role="group" aria-labelledby="k-otp"><input inputmode="numeric" autocomplete="one-time-code" aria-label="Digit 1"><input inputmode="numeric" aria-label="Digit 2"><input inputmode="numeric" aria-label="Digit 3"><input inputmode="numeric" aria-label="Digit 4"><input inputmode="numeric" aria-label="Digit 5"><input inputmode="numeric" aria-label="Digit 6"></div></div>
+          <button class="btn btn--primary btn--block">Submit</button>
+        </form>
+
+        <div class="stack">
+          <section class="card">
+            <div class="card__head"><h2 class="card__title">Badges</h2></div>
+            <div class="row"><span class="badge badge--ok">Completed</span><span class="badge badge--warn">Pending</span><span class="badge badge--err">Failed</span><span class="badge badge--info">In review</span><span class="badge badge--teal">Verified</span><span class="badge">Draft</span></div>
+          </section>
+          <section class="card stack">
+            <h2 class="card__title">Alerts</h2>
+            <div class="alert alert--info" role="status">Transfers to India arrive in minutes via UPI.</div>
+            <div class="alert alert--warn" role="status">Verify your identity to raise your limit.</div>
+            <div class="alert alert--err" role="alert">Payment declined by the receiving bank.</div>
+            <div class="alert alert--ok" role="status">Recipient added.</div>
+          </section>
+          <section class="card stack">
+            <h2 class="card__title">Tabs, dialog, toast</h2>
+            <div class="tabs" role="tablist"><button role="tab" aria-selected="true">All</button><button role="tab" aria-selected="false">Sent</button><button role="tab" aria-selected="false">Received</button></div>
+            <div class="row"><button class="btn btn--line" data-open="k-dialog">Open dialog</button><button class="btn btn--line" data-toast="Rate locked for 30 seconds">Toast</button><button class="btn btn--line" data-toast="Something went wrong" data-toast-kind="err">Error toast</button></div>
+          </section>
+          <section class="card stack" aria-label="Loading state">
+            <h2 class="card__title">Loading skeleton</h2>
+            <div class="skel" style="width:60%"></div><div class="skel"></div><div class="skel" style="width:80%"></div>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <div class="card__head"><h2 class="card__title">Table</h2><a class="btn btn--ghost btn--sm" href="activity.html">View all</a></div>
+        <div class="table-wrap">
+          <table class="table" data-api="GET /transactions?limit=5">
+            <thead><tr><th>Date</th><th>Recipient</th><th>Route</th><th>Status</th><th class="r">Amount</th></tr></thead>
+            <tbody>
+              <tr><td>04 Nov</td><td>Ravi Mehta</td><td>HKD → INR · UPI</td><td><span class="badge badge--ok">Completed</span></td><td class="r num">−HK$ 2,500.00</td></tr>
+              <tr><td>03 Nov</td><td>Sara Al Nuaimi</td><td>HKD → AED · Bank</td><td><span class="badge badge--warn">Pending</span></td><td class="r num">−HK$ 4,000.00</td></tr>
+              <tr><td>01 Nov</td><td>Convert</td><td>HKD → USDC</td><td><span class="badge badge--ok">Completed</span></td><td class="r num">−HK$ 1,200.00</td></tr>
+              <tr><td>30 Oct</td><td>Top up</td><td>FPS</td><td><span class="badge badge--err">Failed</span></td><td class="r num">+HK$ 5,000.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid grid--2">
+        <div class="card">
+          <div class="card__head"><h2 class="card__title">List</h2></div>
+          <div class="list">
+            <a class="list__item" href="#"><span class="list__ico"><img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags@2.8.3/flags/in.svg" alt=""></span><span class="list__main"><b>Ravi Mehta</b><span>HDFC ···· 4821</span></span><span class="list__end">₹ 26,410</span></a>
+            <a class="list__item" href="#"><span class="list__ico"><img src="https://cdn.jsdelivr.net/gh/HatScripts/circle-flags@2.8.3/flags/ae.svg" alt=""></span><span class="list__main"><b>Sara Al Nuaimi</b><span>Emirates NBD ···· 0193</span></span><span class="list__end">AED 1,880</span></a>
+            <a class="list__item" href="#"><span class="list__ico">JL</span><span class="list__main"><b>James Lau</b><span>FPS · 9123 ····</span></span><span class="list__end">HK$ 800</span></a>
+          </div>
+        </div>
+        <div class="card"><div class="empty"><b>No recipients yet</b><span>Add someone to send money in two taps.</span><button class="btn btn--primary btn--sm">Add recipient</button></div></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- phones: bottom tab bar ("More" opens the rail) -->
+  <nav class="tabbar" aria-label="Quick">
+    <a href="dashboard.html"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+    <a href="send.html"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Send</a>
+    <a href="activity.html"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Activity</a>
+    <a href="recipients.html"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/></svg>People</a>
+    <a href="#" data-nav-toggle><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>More</a>
+  </nav>
+</div>
+
+<dialog class="modal" id="k-dialog" aria-labelledby="k-dialog-t">
+  <h2 id="k-dialog-t">Cancel this transfer?</h2>
+  <p class="muted" style="margin-top:8px">HK$ 4,000.00 to Sara Al Nuaimi will be returned to your HKD balance.</p>
+  <div class="modal__foot"><button class="btn btn--line" data-close>Keep it</button><button class="btn btn--danger" data-close data-toast="Transfer cancelled">Cancel transfer</button></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

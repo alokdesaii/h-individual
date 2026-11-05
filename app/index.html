@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Screen index — H Individual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../assets/mark.svg?v=3">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main class="main" style="margin:auto">
+  <div class="page-head">
+    <div>
+      <p class="kicker">H Individual · web app</p>
+      <h1>Screen index</h1>
+      <p>Front-end skeletons for the backend team. Each screen is static HTML on the shared kit; hand-off notes below.</p>
+    </div>
+    <a class="btn btn--dark" href="kit.html">Open UI kit</a>
+  </div>
+
+  <section class="card stack">
+    <h2 class="card__title">How to wire these up</h2>
+    <ul style="padding-left:18px;display:grid;gap:6px">
+      <li>Every screen loads <code>app.css</code> + <code>app.js</code>. No build step, no framework — port to your templating as you like.</li>
+      <li>Elements that need live data carry <code>data-api="METHOD /path"</code> naming the endpoint we assumed. Sample values in the HTML show the expected format.</li>
+      <li>Logged-in screens share the shell in <a href="kit.html">kit.html</a> (rail, top bar, phone tab bar). Copy it as-is; the current page highlights itself.</li>
+      <li>States to render server-side: <code>.skel</code> while loading, <code>.empty</code> when there is nothing, <code>.alert--err</code> on failure, <code>aria-invalid="true"</code> + <code>.error</code> on bad fields.</li>
+      <li>JS helpers: <code>toast('msg', 'err')</code>, <code>[data-open="dialogId"]</code>, <code>[data-close]</code>, <code>[data-nav-toggle]</code>.</li>
+    </ul>
+  </section>
+
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>Screen</th><th>File</th><th>Section</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>UI kit + app shell</td><td><a href="kit.html">kit.html</a></td><td>Foundation</td><td><span class="badge badge--ok">Ready for review</span></td></tr>
+        <tr><td>Log in</td><td>login.html</td><td>Auth</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Sign up</td><td>signup.html</td><td>Auth</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Verify code (OTP)</td><td>verify.html</td><td>Auth</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Reset password</td><td>reset.html</td><td>Auth</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Identity verification (KYC)</td><td>kyc.html</td><td>Onboarding</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Home</td><td>dashboard.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Send money</td><td>send.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Balances &amp; convert</td><td>balances.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Recipients</td><td>recipients.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Activity</td><td>activity.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Transaction detail</td><td>transaction.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Settings</td><td>settings.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+        <tr><td>Help</td><td>help.html</td><td>Portal</td><td><span class="badge">Not started</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+</body>
+</html>
