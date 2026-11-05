@@ -30,7 +30,9 @@ img,svg{display:block}
 .side__label{padding:16px 10px 6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6f6f6f}
 .nav a{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:10px;text-decoration:none;font-size:14px;color:#bdbdbd;transition:background .15s,color .15s}
 .nav a:hover{background:var(--ink-3);color:#fff}
-.nav a[aria-current="page"]{background:var(--ink-3);color:#fff;box-shadow:inset 2px 0 0 var(--teal)}
+.nav a[aria-current="page"]{color:#fff;font-weight:500}
+.nav a[aria-current="page"] svg{stroke:var(--teal)}
+.nav a[aria-current="page"]:hover{background:none}
 .nav svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .nav .count{margin-left:auto;font-family:var(--mono);font-size:11px;padding:1px 7px;border-radius:99px;background:var(--teal);color:var(--ink)}
 .side__foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--rail-line)}
